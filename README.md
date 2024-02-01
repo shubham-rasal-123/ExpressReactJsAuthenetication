@@ -1,1 +1,1 @@
-# Express ReactJs Authenetication
+# Express ReactJs Authentication
