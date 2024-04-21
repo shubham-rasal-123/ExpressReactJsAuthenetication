@@ -9,7 +9,7 @@ import Layout from "./pages/Layout";
 import { useSelector } from "react-redux";
 
 function App() {
-  const { token } = useSelector(state => state.auth)
+  const { token } = useSelector((state) => state.auth);
   return (
     <>
       <BrowserRouter>
@@ -17,11 +17,23 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="login" element={!token ? <LoginReg /> : <Navigate to="/dashboard" />} />
-            <Route path="sendpasswordresetemail" element={<SendPasswordResetEmail />} />
-            <Route path="api/user/reset/:id/:token" element={<ResetPassword />} />
+            <Route
+              path="login"
+              element={!token ? <LoginReg /> : <Navigate to="/dashboard" />}
+            />
+            <Route
+              path="sendpasswordresetemail"
+              element={<SendPasswordResetEmail />}
+            />
+            <Route
+              path="api/user/reset/:id/:token"
+              element={<ResetPassword />}
+            />
           </Route>
-          <Route path="/dashboard" element={token ? <Dashboard /> : <Navigate to="/login" />} />
+          <Route
+            path="/dashboard"
+            element={token ? <Dashboard /> : <Navigate to="/login" />}
+          />
           <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />
         </Routes>
       </BrowserRouter>
