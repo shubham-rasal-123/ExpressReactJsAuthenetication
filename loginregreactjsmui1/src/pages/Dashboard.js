@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { setUserInfo, unsetUserInfo } from "../features/userSlice";
 import { unsetUserToken } from "../features/authSlice";
+
 const Dashboard = () => {
   const navigate = useNavigate();
   const handleLogout = () => {
