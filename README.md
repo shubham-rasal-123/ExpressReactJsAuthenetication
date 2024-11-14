@@ -1,12 +1,19 @@
 # Express ReactJs Authenetication
 
+
+## Screeshots
+
+![alt text](screenshots/Screenshot1.png)
+
+![alt text](screenshots/Screenshot2.png)
+
+![alt text](screenshots/Screenshot3.png)
+
 ## 📃 Description
 
 Express & React Authentication System
 
 This project is a full-stack authentication system developed with [Express](https://www.npmjs.com/package/express) for the backend and [React](https://react.dev/) for the frontend. It provides secure user authentication, including registration, login, and email verification, with encrypted passwords managed by [bcrypt](https://www.npmjs.com/package/bcrypt) and [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) for token-based session management. [Mongoose](https://www.npmjs.com/package/mongoose) is used to interact with a MongoDB database, while [nodemailer](https://www.npmjs.com/package/nodemailer) sends verification and password recovery emails. On the front end, React and [React-Redux](https://redux.js.org/) handle state management and user interface, with [React Router](https://www.npmjs.com/package/react-router-dom) managing navigation. [CORS](https://www.npmjs.com/package/cors) enables secure cross-origin requests, and [dotenv](https://www.npmjs.com/package/dotenv) protects sensitive configuration data. Web Vitals is also included to monitor performance, ensuring a fast and reliable user experience. This project is ideal for understanding secure authentication, API communication, and state management in a modern web application.
-
-![alt text](images/image.png)
 
 ## ⚙️ Requirements
 
@@ -50,7 +57,6 @@ This project is a full-stack authentication system developed with [Express](http
 + `mkdir middlewares`
 + `mkdir routes`
 
-
 #### Step 5: Create another file named app.js inside project directory:
 
 + `touch app.js`
@@ -60,7 +66,3 @@ This project is a full-stack authentication system developed with [Express](http
 #### Type the following command in terminal of your project directory:
 
 + `npm start`
-
-## 📺 Output:
-
-![alt text](<images/Screenshot from 2024-11-10 13-24-48.png>)
